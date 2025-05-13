@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0c2e472d1b97f478d189dde80ea40b, type: 3}
+  m_Name: AppleSO
+  m_EditorClassIdentifier: 
+  id: 1
+  Stats: 2
+  itemName: Apple
+  itemDescription: Heals Half a Heart
+  icon: {fileID: 21300000, guid: 2b93a9513844ecf4c95b9c36caa1cf35, type: 3}
+  worldItem: {fileID: 6245450575131362977, guid: 92772f1a2ad173541a5f72340f54c18e, type: 3}
+  ItemEffect: {fileID: 0}

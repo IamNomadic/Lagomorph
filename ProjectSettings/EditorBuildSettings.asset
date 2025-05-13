@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Forrest V2/Scenes/Title.unity
+    guid: 8c518dc5821d02a438fc2339af2c0769
+  - enabled: 0
+    path: Assets/Forrest V1/Scenes/TheForrestV1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Forrest V2/Scenes/TheForrestV2.unity
+    guid: 18c794fb8a8a6d742b9b10900d5d738d
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: f1a5489b02e7e3d409f3fcb82c67ec07, type: 2}

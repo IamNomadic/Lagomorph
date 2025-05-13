@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &216667583989309221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3934502438839548673}
+  - component: {fileID: 4935720301505754646}
+  - component: {fileID: 3780075929506754807}
+  m_Layer: 0
+  m_Name: ItemSelection 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3934502438839548673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216667583989309221}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 446.80728, y: 210.34442, z: -0.31369632}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4935720301505754646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216667583989309221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2afe824143675884bb6bc8468b31368c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemSelector: {fileID: 3780075929506754807}
+  Holder: {fileID: 0}
+  player: {fileID: 0}
+  itemButtonPrefab: {fileID: 3909988561899452631, guid: 30a266dc1994d8046bdac402d782a457, type: 3}
+  itemButtonPanel: {fileID: 0}
+  itemButtonPanelGameObject: {fileID: 0}
+  txtName: {fileID: 0}
+  txtDescription: {fileID: 0}
+  txtStats: {fileID: 0}
+  itemIcon: {fileID: 0}
+--- !u!114 &3780075929506754807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216667583989309221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7878044994c3094cb86af9684a3927b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PH: {fileID: 0}
+  UI: {fileID: 4935720301505754646}
+  allItems:
+  - {fileID: 11400000, guid: 2496a53914986d6438da22178b5ceaa3, type: 2}
+  - {fileID: 11400000, guid: db49b2cc18687fe4fa112fddef298a0d, type: 2}
