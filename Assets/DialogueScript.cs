@@ -9,7 +9,7 @@ public class DialogueScript : MonoBehaviour
 
     public void OnEnable()
     {
-        DisplayTime = 4;
+        
 
     }
 

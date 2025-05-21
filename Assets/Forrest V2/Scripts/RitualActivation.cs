@@ -8,6 +8,7 @@ public class RitualActivation : MonoBehaviour
     float LocalTime;
     public GameObject BunnyTrapAsset;
     BunnyGenerator BG;
+    public RitualGenerator RG;
     PlayerStats PS;
     bool RitualComplete;
     bool RitualStarted;
@@ -15,6 +16,7 @@ public class RitualActivation : MonoBehaviour
     public string RitualLetter;
     public Animator RitualAnimator;
     public AudioSource RitualSound;
+    [SerializeField] RitualZone RitualZone;
     [SerializeField] int AdditionalBunniesToSpawn;
     // Start is called before the first frame update
     void Start()
@@ -22,6 +24,7 @@ public class RitualActivation : MonoBehaviour
         GT = GameObject.FindObjectOfType<GameTimer>();
         BG = GameObject.FindObjectOfType<BunnyGenerator>();
         PS = GameObject.FindObjectOfType<PlayerStats>();
+        RG = GameObject.FindObjectOfType<RitualGenerator>();
         LocalTime = 5;
         RitualStarted = false;
         played = false;
@@ -58,6 +61,11 @@ public class RitualActivation : MonoBehaviour
         {
             RitualAnimator.Play("EndRitual" + RitualLetter);
         }
+        if (RitualZone.Detected)
+        {
+            RG.RitualsToGenerate++;
+
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -78,7 +86,7 @@ public class RitualActivation : MonoBehaviour
         RitualStarted = true;
         LocalTime = 10;
     }
-
+ 
     public void CompleteRitual()
     {
         if( !RitualComplete)
