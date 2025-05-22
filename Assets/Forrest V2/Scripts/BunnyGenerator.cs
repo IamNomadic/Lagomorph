@@ -73,7 +73,7 @@ public class BunnyGenerator : MonoBehaviour
                 SelectedSpawnZone = SpawnZoneColliderBottom;
 
             }
-            Debug.Log("Bunny" + i);
+            
 
             randomItem = UnityEngine.Random.Range(0, SpawnPool.Count);
             toSpawn = SpawnPool[randomItem];

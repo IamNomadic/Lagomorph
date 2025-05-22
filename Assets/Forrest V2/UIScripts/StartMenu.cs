@@ -15,7 +15,7 @@ public class StartMenu : MonoBehaviour
     public void OnPlayButton()
     {
         
-        SceneManager.LoadScene("TheForrestV2");
+        SceneManager.LoadScene("TheForrestV3");
     }
 
     public void OnHover()
@@ -38,7 +38,7 @@ public class StartMenu : MonoBehaviour
     private IEnumerator StartScene()
     {
         yield return new WaitForSeconds(0.1f);
-        SceneManager.LoadScene("TheForrestV2");
+        SceneManager.LoadScene("TheForrestV3");
     }
 
     private IEnumerator OpenOptions()

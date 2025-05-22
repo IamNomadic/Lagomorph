@@ -66,9 +66,9 @@ public class PauseMenu : MonoBehaviour
     
     void ExitGame()
     {
+        Time.timeScale = 1;
         
-        Debug.Log("Exited Game");
-        SceneManager.LoadScene("Title");
+        SceneManager.LoadScene(0);
 
     }
     IEnumerator RestartGame()

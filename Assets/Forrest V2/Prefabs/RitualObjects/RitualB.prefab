@@ -105,10 +105,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BunnyTrapAsset: {fileID: 2087943176370477019, guid: 373cf6750bcae8c40bcea0ccafbdcd57, type: 3}
+  RG: {fileID: 0}
   RitualLetter: B
   RitualAnimator: {fileID: 3456290289745444637}
   RitualSound: {fileID: 345648223447862685}
-  RitualZone: {fileID: 0}
+  RitualZone: {fileID: 5151684682368681314}
   AdditionalBunniesToSpawn: 5
 --- !u!61 &1696599965472359745
 BoxCollider2D:

@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2502278855284767158}
-  - component: {fileID: 4991279147703087855}
   - component: {fileID: 4400331389118519086}
+  - component: {fileID: 8856241937469501276}
   m_Layer: 0
   m_Name: RitualZone
   m_TagString: Ritual
@@ -33,52 +33,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1339346606514225638}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &4991279147703087855
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3918876915257272781}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!114 &4400331389118519086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,6 +45,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73c7d329ee1f0c84b859dd7bb9fa1c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Detected: 0
+--- !u!64 &8856241937469501276
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3918876915257272781}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &6920066061133042019
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,6 +82,7 @@ GameObject:
   - component: {fileID: -9102334832553264348}
   - component: {fileID: 8631920521725412304}
   - component: {fileID: 8644140303701386692}
+  - component: {fileID: 7419238215282834283}
   m_Layer: 0
   m_Name: RitualA
   m_TagString: Ritual
@@ -196,6 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BunnyTrapAsset: {fileID: 2087943176370477019, guid: 373cf6750bcae8c40bcea0ccafbdcd57, type: 3}
+  RG: {fileID: 0}
   RitualLetter: A
   RitualAnimator: {fileID: 8644140303701386692}
   RitualSound: {fileID: 8631920521725412304}
@@ -366,3 +345,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7419238215282834283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6920066061133042019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d73641d36db52d640b0bcdde58c2503f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPool:
+  - {fileID: 8955382522286930159, guid: 85c6e8f9ca48f444cbbd16d9e5dca4be, type: 3}
+  quad: {fileID: 3918876915257272781}
+  TotalToSpawn: 10
