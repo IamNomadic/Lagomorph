@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 9014537691330932853}
   m_Layer: 0
   m_Name: ClearZone
-  m_TagString: Ritual
+  m_TagString: Movable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Self: {fileID: 8495925545662250969}
+  Tag: 
 --- !u!50 &9014537691330932853
 Rigidbody2D:
   serializedVersion: 5

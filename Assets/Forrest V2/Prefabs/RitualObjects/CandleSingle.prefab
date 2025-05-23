@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Self: {fileID: 8955382522286930159}
-  Tag: Ritual
+  Tag: Movable
 --- !u!58 &910999628870937876
 CircleCollider2D:
   m_ObjectHideFlags: 0
