@@ -3653,7 +3653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementEnabled: 1
-  Speed: 2
+  Speed: 1.5
   horizontal: 0
   vertical: 0
   rB: {fileID: 1023161642}
