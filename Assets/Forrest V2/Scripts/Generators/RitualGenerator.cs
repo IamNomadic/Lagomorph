@@ -33,7 +33,7 @@ public class RitualGenerator : MonoBehaviour
         Vector2 pos;
         for(RitualsGenerated = 0; RitualsGenerated < RitualsToGenerate; RitualsGenerated++)
         {
-            Debug.Log("ritual"+RitualsGenerated);
+           
 
             randomItem = UnityEngine.Random.Range(0, spawnPool.Count);
             toSpawn = spawnPool[randomItem];
