@@ -445,7 +445,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Self: {fileID: 4373003752024152278}
-  Tag: 
+  speed: 0.5
+  Tag: Movable
 --- !u!50 &6598303169308794547
 Rigidbody2D:
   serializedVersion: 5

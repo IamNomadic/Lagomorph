@@ -3,23 +3,28 @@ using UnityEngine;
 public class RepositionObject : MonoBehaviour
 {
     [SerializeField] GameObject Self;
+    [SerializeField] float speed = 1;
     [SerializeField] string Tag;
-    float Randx;
-    float Randy;
+    Vector2 Direction;
+    Vector2 MoveVector;
+    
 
 
     private void Start()
     {
-        Randx = UnityEngine.Random.Range(-0.5f, 0.5f);
-        Randy = UnityEngine.Random.Range(-0.5f, 0.5f);
+        
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("hooogadaba");
+        
 
         if (collision.CompareTag(Tag))
         {
-            Self.gameObject.transform.position = Self.gameObject.transform.position + new Vector3(Randx, Randy, 0);
+            Vector2 Direction = transform.position - collision.transform.position;
+            Direction.Normalize();
+            MoveVector = Direction * speed;
+            
+            Self.gameObject.transform.position = Self.gameObject.transform.position + new Vector3(MoveVector.x,MoveVector.y, 0);
            
         }
 
